@@ -1,1 +1,6 @@
 url: http://localhost:8000/currency-exchange/from/USD/to/INR
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource 
+[org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: 
+Failed to execute SQL script statement #1 of file [C:\ws\28Mins\Micro-service\currency-exchange-service\target\classes\data.sql]: 
+insert into Currency_Exchange(id,currency-from,currency-to,conversion_multiple,environment) values(1001,'USD','INR',65,'')
