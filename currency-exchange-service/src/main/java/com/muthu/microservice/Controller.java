@@ -26,8 +26,9 @@ public class Controller {
 		if(currencyExchange == null) {
 			throw new RuntimeException("Unable to find the value"+ "from" + from + "to" + to );
 		}
-		String property = environment.getProperty("server.port");
+		String property = environment.getProperty("local.server.port");
 		currencyExchange.setEnvironment(property);
+		System.out.println("CurrencyExchange values are"+ currencyExchange.getEnvironment());
 		return currencyExchange;
 	}
 	
